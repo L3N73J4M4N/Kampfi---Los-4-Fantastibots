@@ -6,6 +6,8 @@ En especifico esta batlla contra el robot Blacksmith. En eso decidimos que el ar
 
 ![Minotauro](/multimedia/Minotaur-Bot.jpg)
 
+También se tomaron ideas de posicionamiento de componentes electronicos, y tanto funcicionamiento como forma del arma del battlebot VIKAT, un análogo a Minotaur, subido online en la comunidad GrabCAD: https://grabcad.com/library/battlerobot-vikat-1
+
 Por limitaciones de presupuesto y tiempo, a lo largo del semestre cambiamos nuestro referente al baron rojo, dado que encontramos un motor de radiador de auto en el FabLab de la FCFM, En esto cambiamos el arma a una helice frontal a 45°. 
 
 ![Baron](/multimedia/El-baron-rojo.jpg)
