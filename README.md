@@ -1,5 +1,5 @@
 # Kampfi - 2022
-Inspirado por los errores tecnicos y la mala cuea, Kampfi fue creado para maximizar la cantidad de cosas que podrian salir mal al hacer girar un pedazo de acero a la velocidad del ventilador en el radiador de un sedan. El equivalente battlebotiano de lo que sucede cuando le das un ak-47 a un mono.
+Inspirado por los errores tecnicos y la mala suerte, Kampfi fue creado para maximizar la cantidad de cosas que podrian salir mal al hacer girar un pedazo de acero a la velocidad del ventilador en el radiador de un sedan. El equivalente battlebotiano de lo que sucede cuando le das un ak-47 a un mono.
 
 ![Kampfi](/multimedia/KampfiFinal.jpeg)
 
@@ -32,61 +32,32 @@ Las defensas del robot estan distribuidas de forma relativamente equitativa: El 
 El movimiento y la operación del robot se logran mediante una simple aplicación movil. 6 botones, 4 organizados en una cruz y 2 paralelos, abajo de esta, permiten el movimiento y uso del arma, respectivamente.
 
 ## Diagrama funcional
-Iniciado:
-1- conectar batt secundaria, confirmar que se prende la luz en modulo bluetooth y modulo arduino
-      si no hay bluetooth, checkear conexión con shield
-            si aun no hay bluetooth, y hay arduino reemplazar shield y probar
-                  si aun no hay bluetooth reemplazar modulo bluetooth
-      si no hay arduino (ni bluetooth), checkear conexion con bateria y carga
-            si aun no hay arduino reemplazar shield y probar
-                  si aun no hay arduino reemplazar arduino
-       
-2- conectar batt primaria, confirmar que se prende luz en puente H
-      si no hay luz checkear conexiones bateria y carga
-            si aun no hay luz checkear conexion entre puente H y bateria (cables rojo y negro), posiblemente reemplazar puente H
 
-3- conectar celular a modulo bluetooth
-      si no conecta intentar denuevo
-            si no conecta luego de un numero razonable de intentos cerrar aplicación, abrirla e intentar denuevo
-                  si aun no conecta debuggear a fondo
-            
-4- el robot esta listo para su uso
-
-Movimiento: 
-- frente/atras/izq/derecha mueve al frente/blablabla
-      si no funciona levantar al robot del piso y checkear
-            si funciona cargar batería principal y listo
-            si no funciona abrir robot y checkear conexiónes con motores/puente H
-                  si conexiones estan bien desarmar motor y unir nuevamente engranage a driveshaft motor
-                  
-Ataque:
-1- activar motor
-2- acercarse a enemigo y desactivar motor dentro de rango aceptable
-3- impactar enemigo
-4- maniobrar para que helice este libre para rotar sin chocar contra alguna superficie
-      si no se puede maniobrar, usar ataque e intentar lo que sea, sUerte
+![inicio](/multimedia/inicio.png)
+![movimiento](/multimedia/movimiento.png)
+![ataque](/multimedia/ataque.png)
 
 ## Paso a Paso
 ### Materiales
+
 -Plancha de aluminio compuesto
 -Plancha de acero inoxidable cortada en rectangulos
 -Puente H de 12V
--Relay de 12 V
+-Relay de 5 V
 -Cables
 -Arduino Uno
 -Regulador de voltaje 7 V a 5 V
 -Motor de radiador
 -Pintura en Aerosol plateada y roja
 -Filamento plastico
--Bateria 12 V 
--Bateria 7 V
+-Bateria 11.1 V 1500 mA
+-Bateria 7.4 V 1200 mA
 -Tornillos
 -Tuercas
 -Madera
 -Estaño
 -2 motores de rueda 5 V
 -2 ruedas de goma
-
 -un (1) Kampfi de regulación (ISO b4tT73b0T-K)
 
 
@@ -99,21 +70,20 @@ Ataque:
 -Destornillador
 -Sierra Circular
 -Martillo
--Cautin
+-Cautin soldador
 
 
 ### Procedimiento
 
-1) Descargar todos los archivos de las piezas, el codigo de arduino y el apk de la app
-2) Realizar el circuito del bot
-3) Probar que funcione la parte electrica y la aplicacion
-4) Cortar las piezas de la base y la coraza
-5) Ensamblar los componentes en la base
-6) Armar la coraza
-7) Ensamblar el arma
-8) Asegurar todo en sus lugares
-9) Juntar la coraza y la base
-10) Comprobar el funcionamiento con el diagrama funcional
+1) Descargar todos los archivos necesarios: archivos .f3z con el ensamblado y los distintos componentes, el codigo de arduino y el .apk de la aplicación para controlarlo.
+2) Reunir los diferentes componentes electronicos y de movimiento.
+3) Realizar el circuito de Arduino del robot.
+4) Probar que funcione la parte electrica (las conexiones) a través de la aplicacion.
+5) Abrir los archivos "piezas_corazas.f3z" y "base.f3z" y cortar las piezas necesarias en una CNC.
+6) Recortar de la forma requerida las piezas de madera presentes en "ensamblado.f3z" cuyo fin es unir a través de tornillos las partes de la coraza.
+7) Ensamblar cada una de las piezas y componentes electronicos. Para esto, verifique el archivo "ensamblado.f3z" para guiarse.
+8) Asegurar que todo este en su lugar, se recomienda una cantidad de 3 tornillos por lado.
+9) Comprobar el funcionamiento con el diagrama funcional.
 
 Su Kampfi esta listo para funcionar.
 
